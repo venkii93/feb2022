@@ -1,0 +1,9 @@
+This OS-related info was saved from this machine with os-prober at 2022-0208-1522:
+/dev/sda2:Ubuntu 20.04.3 LTS (20.04):Ubuntu:linux
+*****************************************************.
+This Linux boot related info was saved from this machine with linux-boot-prober at 2022-0208-1522:
+/dev/sda2:/dev/sda2:Ubuntu:/boot/vmlinuz-5.13.0-28-generic:/boot/initrd.img-5.13.0-28-generic:root=UUID=e86f4417-9d0f-4e59-8c6f-b6f8ca55da96 ro quiet splash $vt_handoff
+/dev/sda2:/dev/sda2:Ubuntu, with Linux 5.13.0-28-generic:/boot/vmlinuz-5.13.0-28-generic:/boot/initrd.img-5.13.0-28-generic:root=UUID=e86f4417-9d0f-4e59-8c6f-b6f8ca55da96 ro quiet splash $vt_handoff
+/dev/sda2:/dev/sda2:Ubuntu, with Linux 5.13.0-28-generic (recovery mode):/boot/vmlinuz-5.13.0-28-generic:/boot/initrd.img-5.13.0-28-generic:root=UUID=e86f4417-9d0f-4e59-8c6f-b6f8ca55da96 ro recovery nomodeset dis_ucode_ldr
+/dev/sda2:/dev/sda2:Ubuntu, with Linux 5.11.0-27-generic:/boot/vmlinuz-5.11.0-27-generic:/boot/initrd.img-5.11.0-27-generic:root=UUID=e86f4417-9d0f-4e59-8c6f-b6f8ca55da96 ro quiet splash $vt_handoff
+/dev/sda2:/dev/sda2:Ubuntu, with Linux 5.11.0-27-generic (recovery mode):/boot/vmlinuz-5.11.0-27-generic:/boot/initrd.img-5.11.0-27-generic:root=UUID=e86f4417-9d0f-4e59-8c6f-b6f8ca55da96 ro recovery nomodeset dis_ucode_ldr

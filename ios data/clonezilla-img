@@ -1,0 +1,120 @@
+This image was saved by Clonezilla at 2022-02-08 15:22:17 UTC.
+Saved by clonezilla-live-2.7.3-19-amd64.
+The log during saving:
+----------------------------------------------------------
+Starting /usr/sbin/ocs-sr at 2022-02-08 15:17:47 UTC...
+*****************************************************.
+Clonezilla image dir: /home/partimag
+Shutting down the Logical Volume Manager
+Finished Shutting down the Logical Volume Manager
+The selected devices: sda
+PS. Next time you can run this command directly:
+/usr/sbin/ocs-sr -q2 -c -j2 -z1p -i 4096 -sfsck -scs -senc -p choose savedisk feb-22-20.4-110h-img sda
+*****************************************************.
+The selected devices: sda
+Searching for data/swap/extended partition(s)...
+The data partition to be saved: sda1 sda2
+The selected devices: sda1 sda2
+The following step is to save the hard disk/partition(s) on this machine as an image:
+*****************************************************.
+Machine: H110M-S2
+sda (240GB_240GB_SSD__240GB_SSD_LJS946R002784)
+sda1 (512M_vfat(In_240GB_SSD_)_240GB_SSD_LJS946R002784)
+sda2 (223.1G_ext4(In_240GB_SSD_)_240GB_SSD_LJS946R002784)
+*****************************************************.
+-> "/home/partimag/feb-22-20.4-110h-img".
+Shutting down the Logical Volume Manager
+Finished Shutting down the Logical Volume Manager
+Saving block devices info in /home/partimag/feb-22-20.4-110h-img/blkdev.list...
+Saving block devices attributes in /home/partimag/feb-22-20.4-110h-img/blkid.list...
+Checking the integrity of partition table in the disk /dev/sda... 
+Reading the partition table for /dev/sda...RETVAL=0
+*****************************************************.
+Saving the primary GPT of sda as /home/partimag/feb-22-20.4-110h-img/sda-gpt-1st by dd...
+34+0 records in
+34+0 records out
+17408 bytes (17 kB, 17 KiB) copied, 0.000711043 s, 24.5 MB/s
+*****************************************************.
+Saving the secondary GPT of sda as /home/partimag/feb-22-20.4-110h-img/sda-gpt-2nd by dd...
+32+0 records in
+32+0 records out
+16384 bytes (16 kB, 16 KiB) copied, 0.00134869 s, 12.1 MB/s
+*****************************************************.
+Saving the GPT of sda as /home/partimag/feb-22-20.4-110h-img/sda-gpt.gdisk by gdisk...
+The operation has completed successfully.
+*****************************************************.
+Saving the MBR data for sda...
+1+0 records in
+1+0 records out
+512 bytes copied, 0.000566004 s, 905 kB/s
+Starting saving /dev/sda1 as /home/partimag/feb-22-20.4-110h-img/sda1.XXX...
+/dev/sda1 filesystem: vfat.
+*****************************************************.
+*****************************************************.
+Use partclone with pigz to save the image.
+Image file will be split with size limit 4096 MB.
+*****************************************************.
+If this action fails or hangs, check:
+* Is the disk full ?
+*****************************************************.
+Run partclone: partclone.vfat -z 10485760 -N -L /var/log/partclone.log -c -s /dev/sda1 --output - | pigz -c --fast -b 1024 --rsyncable | split -a 2 -b 4096MB - /home/partimag/feb-22-20.4-110h-img/sda1.vfat-ptcl-img.gz. 2> /tmp/split_error.AmwjGU
+Partclone v0.3.17 http://partclone.org
+Starting to clone device (/dev/sda1) to image (-)
+Reading Super Block
+memory needed: 21102596 bytes
+bitmap 131072 bytes, blocks 2*10485760 bytes, checksum 4 bytes
+Calculating bitmap... Please wait... 
+done!
+File system:  FAT32
+Device size:  536.9 MB = 1048576 Blocks
+Space in use:   6.5 MB = 12792 Blocks
+Free Space:   530.3 MB = 1035784 Blocks
+Block size:   512 Byte
+Total block 1048576
+Syncing... OK!
+Partclone successfully cloned the device (/dev/sda1) to the image (-)
+>>> Time elapsed: 7.19 secs (~ .119 mins)
+*****************************************************.
+Finished saving /dev/sda1 as /home/partimag/feb-22-20.4-110h-img/sda1.vfat-ptcl-img.gz
+*****************************************************.
+Starting saving /dev/sda2 as /home/partimag/feb-22-20.4-110h-img/sda2.XXX...
+/dev/sda2 filesystem: ext4.
+*****************************************************.
+*****************************************************.
+Use partclone with pigz to save the image.
+Image file will be split with size limit 4096 MB.
+*****************************************************.
+If this action fails or hangs, check:
+* Is the disk full ?
+*****************************************************.
+Run partclone: partclone.ext4 -z 10485760 -N -L /var/log/partclone.log -c -s /dev/sda2 --output - | pigz -c --fast -b 1024 --rsyncable | split -a 2 -b 4096MB - /home/partimag/feb-22-20.4-110h-img/sda2.ext4-ptcl-img.gz. 2> /tmp/split_error.wGoX49
+Partclone v0.3.17 http://partclone.org
+Starting to clone device (/dev/sda2) to image (-)
+Reading Super Block
+memory needed: 28281060 bytes
+bitmap 7309536 bytes, blocks 2*10485760 bytes, checksum 4 bytes
+Calculating bitmap... Please wait... 
+done!
+File system:  EXTFS
+Device size:  239.5 GB = 58476288 Blocks
+Space in use:  15.6 GB = 3799568 Blocks
+Free Space:   224.0 GB = 54676720 Blocks
+Block size:   4096 Byte
+Total block 58476288
+Syncing... OK!
+Partclone successfully cloned the device (/dev/sda2) to the image (-)
+>>> Time elapsed: 157.24 secs (~ 2.620 mins)
+*****************************************************.
+Finished saving /dev/sda2 as /home/partimag/feb-22-20.4-110h-img/sda2.ext4-ptcl-img.gz
+*****************************************************.
+End of saveparts job for image /home/partimag/feb-22-20.4-110h-img.
+*****************************************************.
+*****************************************************.
+End of savedisk job for image feb-22-20.4-110h-img.
+Checking if udevd rules have to be restored...
+This program is not started by Clonezilla server, so skip notifying it the job is done.
+This program is not started by Clonezilla server, so skip notifying it the job is done.
+Finished!
+Finished!
+### End of log ###
+### Image created time: 2022-0208-1522

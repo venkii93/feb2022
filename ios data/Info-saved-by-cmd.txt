@@ -1,0 +1,1 @@
+/usr/sbin/ocs-sr -q2 -c -j2 -z1p -i 4096 -sfsck -scs -senc -p choose savedisk feb-22-20.4-110h-img sda
