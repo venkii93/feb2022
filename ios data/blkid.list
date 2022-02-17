@@ -1,0 +1,5 @@
+/dev/loop0: TYPE="squashfs"
+/dev/sda1: UUID="4E1C-45DD" BLOCK_SIZE="512" TYPE="vfat" PARTLABEL="EFI System Partition" PARTUUID="1168c79e-e86a-4934-90be-77d50a390d92"
+/dev/sda2: UUID="e86f4417-9d0f-4e59-8c6f-b6f8ca55da96" BLOCK_SIZE="4096" TYPE="ext4" PARTUUID="9023862c-bf71-4f24-8ec4-3ada2c0cac45"
+/dev/sdb1: LABEL="2_7_3-19-AM" UUID="C221-1EDF" BLOCK_SIZE="512" TYPE="vfat" PARTUUID="09989c74-01"
+/dev/sdc1: LABEL="New Volume" BLOCK_SIZE="512" UUID="08E06AFAE06AED7E" TYPE="ntfs" PARTLABEL="Basic data partition" PARTUUID="75f1d473-ccf4-4fcb-b746-3180addd8a5a"

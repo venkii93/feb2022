@@ -1,0 +1,6 @@
+BootCurrent: 0002
+Timeout: 1 seconds
+BootOrder: 0000,0002,0001
+Boot0000* ubuntu	HD(1,GPT,1168c79e-e86a-4934-90be-77d50a390d92,0x800,0x100000)/File(\EFI\UBUNTU\SHIMX64.EFI)
+Boot0001* Hard Drive	BBS(HD,,0x0)..GO..NO........o.2.4.0.G.B. .S.S.D....................A...........................>..Gd-.;.A..MQ..L.J.L.9.S.6.4.0.R.2.0.8.7. .4. . . . . . ........BO..NO........c.h.p. .x.7.3.0.w. .P.M.A.P....................A.......................6..Gd-.;.A..MQ..L.6.E.0.0.8.8.5.2.F.0.A.7.9.7.9.4........BO..NO........c.J.M.i.c.r.o.n. .G.e.n.e.r.i.c. .0.2.0.4....................A.......................6..Gd-.;.A..MQ..L.0.1.2.3.4.5.6.7.8.9.A.B.C.D.E.F........BO
+Boot0002* UEFI: hp x730w PMAP, Partition 1	PciRoot(0x0)/Pci(0x14,0x0)/USB(18,0)/HD(1,MBR,0x9989c74,0x800,0x39bf800)..BO
